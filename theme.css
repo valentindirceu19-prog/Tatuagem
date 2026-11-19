@@ -1,0 +1,389 @@
+:root {
+  --ink: #211625;
+  --muted: #766b7b;
+  --cream: #f8f2f5;
+  --paper: #fffbfd;
+  --line: #eadde8;
+  --orange: #a51f49;
+  --orange-dark: #7d173f;
+  --sage: #eee0ee;
+  --purple: #70418d;
+  --purple-dark: #48225f;
+  --rose: #efb8ca;
+  --shadow: 0 24px 70px #48225f1c;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 86% 9%, #f6e8f4 0, transparent 26rem),
+    var(--paper);
+}
+
+.topbar {
+  border-color: #ebdce7;
+  background: #fffbfdf2;
+}
+
+.brand-mark {
+  border-color: #c9a8c9;
+  background: linear-gradient(145deg, #fff 20%, #f5e7f2);
+  box-shadow: inset 0 0 0 3px #fff9;
+}
+
+.brand-mark span,
+.hero h1 em,
+.section-heading h2 em,
+.project-copy h2 em,
+.booking-section h2 em,
+.login-modal h2 em,
+.text-link:hover,
+.hero-side-note span,
+.filter-pill span,
+.project-perks span:first-letter {
+  color: var(--orange);
+}
+
+.button-primary,
+.chat-compose button {
+  background: linear-gradient(115deg, #a51f49, #71388b);
+  box-shadow: 0 7px 18px #77245225;
+}
+
+.button-primary:hover,
+.chat-compose button:hover {
+  background: linear-gradient(115deg, #861b43, #57256f);
+  box-shadow: 0 9px 22px #77245235;
+}
+
+.button-outline {
+  border-color: #d7bfd4;
+}
+
+.button-outline:hover {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.hero {
+  background:
+    radial-gradient(ellipse at 82% 50%, #f1e4f1 0, #f8f1f6 27%, transparent 52%),
+    transparent;
+}
+
+.hero-art {
+  background:
+    radial-gradient(ellipse at 56% 44%, #fbf2fa 0, #eadcec 63%, #e4d7e8 100%);
+  box-shadow: 0 24px 60px #48225f13;
+}
+
+.hero-art-frame {
+  border-color: #b69ab8;
+}
+
+.hero-illustration {
+  color: #542f5e;
+}
+
+.art-caption,
+.art-note {
+  color: #725d79;
+}
+
+.art-caption span {
+  color: #b12d51;
+}
+
+.art-stamp {
+  background: linear-gradient(145deg, #ae254b, #71388b);
+  box-shadow: 0 8px 20px #57245240;
+}
+
+.avatar-stack span {
+  color: #8c2858;
+  background: #f1dce9;
+}
+
+.avatar-stack span:nth-child(2) {
+  background: #e8d9ef;
+}
+
+.avatar-stack span:nth-child(3) {
+  background: #f3d9df;
+}
+
+.trust-strip {
+  border-color: #eadde8;
+  background: #fffbfd;
+}
+
+.trust-strip span {
+  color: #8b3c83;
+}
+
+.filter-pill {
+  border-radius: 20px;
+}
+
+.filter-pill:hover {
+  background: #f4eaf3;
+  color: var(--purple-dark);
+}
+
+.filter-pill.active {
+  background: linear-gradient(110deg, #f8e7ed, #f1e7f5);
+  color: #6d234e;
+}
+
+.price-filter select:focus-visible,
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #884394;
+  outline-offset: 3px;
+}
+
+.design-image {
+  background: linear-gradient(145deg, #f1e9f1, #f7e9ed) !important;
+}
+
+.design-card:nth-child(3n + 2) .design-image {
+  background: linear-gradient(145deg, #f3e7ed, #eee5f5) !important;
+}
+
+.design-svg {
+  color: #522b59;
+}
+
+.design-number {
+  color: #79677b;
+}
+
+.design-tag {
+  border: 1px solid #ead9e8;
+  border-radius: 2px;
+  color: #6c315f;
+}
+
+.design-heart {
+  box-shadow: 0 3px 12px #48225f12;
+}
+
+.design-heart.favorited {
+  color: #ae214b;
+}
+
+.project-section {
+  background:
+    radial-gradient(ellipse at 95% 0, #e9d8ef 0, transparent 40%),
+    linear-gradient(115deg, #f5e6ed, #f0e9f4 58%, #eee1ef);
+}
+
+.project-form input,
+.project-form textarea,
+.booking-form input,
+.booking-form select {
+  border-color: #ddcbdc;
+  background: #fffbfd;
+  border-radius: 4px;
+}
+
+.project-form input:focus,
+.project-form textarea:focus,
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #9c4a8d;
+  box-shadow: 0 0 0 3px #91438d18;
+}
+
+.upload-zone {
+  border-color: #bc9bbc;
+  border-radius: 4px;
+  background: #fcf6fa;
+}
+
+.upload-zone:hover {
+  border-color: #8a3c85;
+  background: #f7edf7;
+}
+
+.upload-icon,
+.login-icon {
+  border-color: #e0c8df;
+  background: linear-gradient(145deg, #f8e8ef, #eee3f5);
+  color: #853b78;
+}
+
+.booking-section {
+  background:
+    radial-gradient(ellipse at 10% 100%, #f8ecf1 0, transparent 44%),
+    transparent;
+}
+
+.footer {
+  background:
+    radial-gradient(ellipse at 75% 0, #482354, transparent 48%),
+    #211522;
+}
+
+.footer .brand-mark {
+  border-color: #785578;
+  background: #38233a;
+}
+
+.chat-launcher {
+  background: linear-gradient(120deg, #321b38, #211522);
+  box-shadow: 0 8px 25px #46204b42;
+}
+
+.chat-launcher > span:first-child,
+.chat-avatar {
+  color: #d59ac7;
+}
+
+.chat-launcher b {
+  background: linear-gradient(145deg, #c32953, #804295);
+}
+
+.chat-panel,
+.login-modal {
+  border-color: #e7d8e6;
+  border-radius: 7px;
+  box-shadow: 0 24px 80px #35163a30;
+}
+
+.chat-avatar {
+  background: #f0e3f0;
+}
+
+.quick-replies button {
+  border-color: #ddc9dd;
+  color: #703b70;
+}
+
+.quick-replies button:hover {
+  background: #f5e9f3;
+}
+
+.modal-backdrop {
+  background: #241729c9;
+  backdrop-filter: blur(5px);
+}
+
+.dashboard {
+  background: #fbf7fb;
+}
+
+.dash-sidebar {
+  background:
+    radial-gradient(ellipse at 50% 0, #542b5c 0, transparent 42%),
+    #211522;
+}
+
+.dash-link > span {
+  color: #ce9aca;
+}
+
+.dash-link:hover,
+.dash-link.active {
+  background: linear-gradient(100deg, #48284d, #38223e);
+  box-shadow: inset 2px 0 #d1749d;
+}
+
+.dash-link i {
+  background: linear-gradient(120deg, #b52750, #78418b);
+}
+
+.profile-avatar {
+  background: #efdeed;
+  color: #512e58;
+}
+
+.stat-card,
+.dash-card,
+.conversation,
+.chat-list,
+.table-wrap {
+  border-color: #ecdfeb;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px #48225f08;
+}
+
+.stat-card > div > i {
+  color: #8a4281;
+}
+
+.dash-card-heading,
+.conversation-head,
+.chat-list h3 {
+  border-color: #efe5ef;
+}
+
+.item-avatar {
+  background: linear-gradient(145deg, #f4e5ee, #eee5f5);
+  color: #6e376f;
+}
+
+.status-chip {
+  color: #5d6753;
+  background: #edf0e7;
+}
+
+.status-chip.pending {
+  color: #8b4e60;
+  background: #f9eaf0;
+}
+
+.dash-table th {
+  background: #fcf7fb;
+}
+
+.dash-table th,
+.dash-table td {
+  border-color: #efe5ef;
+}
+
+.chat-contact.active {
+  background: #f6edf6;
+}
+
+.chat-bubble.assistant {
+  background: #f1eaf2;
+}
+
+.chat-bubble.user {
+  background: #f5e1e9;
+}
+
+.decalque-window {
+  border: 1px solid #e8d8e8;
+  border-radius: 6px;
+  box-shadow: 0 24px 80px #21152250;
+}
+
+.preview-panel {
+  background: linear-gradient(145deg, #f1e9f1, #f8e9ed);
+}
+
+.toast {
+  border: 1px solid #6c426e;
+  border-radius: 4px;
+  background: #2b1930;
+  box-shadow: 0 10px 30px #27152e45;
+}
+
+.toast.error {
+  background: #87233e;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background:
+      radial-gradient(ellipse at 90% 30%, #f0e1f1 0, #f8f0f5 42%, transparent 72%);
+  }
+
+  .dash-sidebar {
+    background: #211522;
+  }
+}
